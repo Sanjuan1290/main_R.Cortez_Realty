@@ -7,3 +7,23 @@ body{
   margin: 0;
   font-family: Poppins, 'sans-serif';
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.text-shadow-md {
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+
+.text-shadow-lg {
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+}
+
+
+.text-outline {
+  -webkit-text-stroke: 1px rgb(88, 56, 11); /* outline thickness + color */
+}
+.text-outline-white {
+  -webkit-text-stroke: 1px white;
+}
