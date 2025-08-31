@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -8,14 +9,7 @@ const Header = () => {
             
             <ul className="flex  gap-3 ">
                 <li><NavLink to='/home'>Home</NavLink></li>
-                <li>
-                    <select name="properties">
-                        <option hidden>Properties</option>
-                        <option value="high-end">HIGH END</option>
-                        <option value="townhomes">TOWNHOMES</option>
-                        <option value="farmlots">FARM LOTS</option>
-                    </select>
-                </li>
+                <li><button className="flex items-center gap-2">Properties <IoIosArrowDown /></button></li>
                 <li><NavLink to='/realtors'>Realtors</NavLink></li>
                 <li><NavLink to='/about'>About</NavLink></li>
                 <li><NavLink to='/FAQs'>FAQs</NavLink></li>
