@@ -15,6 +15,7 @@ const Footer = () => {
       <div className="flex flex-col gap-4">
         <NavLink to="/">HOME</NavLink>
         <button className="flex items-center gap-2">PROPERTIES <IoIosArrowDown /></button>
+        <NavLink to="/listings">LISTINGS</NavLink>
         <NavLink to="/realtors">REALTORS</NavLink>
         <NavLink to="/about">ABOUT</NavLink>
         <NavLink to="/FAQs">FAQs</NavLink>
