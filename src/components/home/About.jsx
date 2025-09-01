@@ -1,8 +1,8 @@
-
+import { NavLink } from "react-router-dom"
 const About = () => {
   return (
-    <div className="bg-[#000000b0] relative h-[100vh] text-gray-50">
-        <img src="/bg-about.png" alt="" className="w-[100%] h-[100vh] absolute -z-10"/>
+    <div className="bg-[#000000b0] relative h-[85vh] text-gray-50">
+        <img src="/bg-about.png" alt="" className="w-[100%] h-[85vh] absolute -z-10"/>
         
         <div className="py-20 px-24 grid grid-cols-2 gap-10">
             <div className="flex flex-col gap-4 items-start">
@@ -14,7 +14,7 @@ const About = () => {
 
                 
 
-                <button className="mt-10 border border-green-600 px-8 py-2 text-[16px] font-semibold tracking-wider transition duration-200 ease-in-out hover:bg-green-500 hover:text-green-950 hover:scale-110">Learn more</button>
+                <NavLink to={'/about'} className="mt-10 border border-green-600 px-8 py-2 text-[16px] font-semibold tracking-wider transition duration-200 ease-in-out hover:bg-green-500 hover:text-green-950 hover:scale-110">Learn more</NavLink>
             </div>
 
             <div className="flex flex-col gap-10">

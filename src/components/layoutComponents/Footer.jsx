@@ -5,7 +5,7 @@ import { BiLogoInstagramAlt } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-[1fr_minmax(100px,200px)_minmax(100px,200px)_1fr] gap-10 px-10 py-4 bg-[#574223] text-gray-50">
+    <footer className="grid grid-cols-[1fr_minmax(100px,200px)_minmax(100px,200px)_1fr] gap-10 px-10 py-4 bg-[#593909] text-gray-50">
 
       <div className="flex flex-col">
         <img src="/logo.png" alt="logo" className="w-[100px] h-[80px] cursor-pointer"/>
