@@ -2,43 +2,45 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
-  const images = ["/bg-2.png", "/bg-1.png", "/bg-about.png"];
+  const images = ["/bg-2.png", "/bg-about.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 10000); // change every 5s
-
+    }, 8000); // every 8s
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Background slideshow */}
       {images.map((img, index) => (
         <img
           key={index}
           src={img}
           alt={`background-${index}`}
-          className={`absolute top-0 left-0 w-full h-full object-fill transition-opacity duration-1000 ${
-            index === currentIndex ? "opacity-100" : "opacity-0"
+          className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+            index === currentIndex ? "opacity-100 scale-105" : "opacity-0 scale-100"
           }`}
         />
       ))}
 
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 z-0"></div>
+
       {/* Content */}
-      <div className="absolute top-[150px] left-1/2 -translate-x-1/2 text-center">
-        <h1 className="text-[100px] font-bold text-[rgb(255,144,40)] text-nowrap text-shadow text-outline">
-          R.Cortez Realty
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+        <h1 className="text-5xl md:text-7xl font-bold text-orange-400 drop-shadow-lg">
+          R. Cortez Realty
         </h1>
-        <p className="-mt-3 text-2xl font-medium text-[#f7ff9a] drop-shadow-md text-nowrap mb-[160px] text-outline">
+        <p className="mt-4 text-lg md:text-2xl font-medium text-[#f7ff9a] drop-shadow-md max-w-2xl">
           Trusted properties in Cavite — from high-end homes to farm lots
         </p>
 
         <NavLink
           to="/properties"
-          className="bg-[#273da0] shadow-lg shadow-blue-500 text-white font-semibold rounded-full px-10 py-3 mt-10 hover:bg-[#112f04] transition hover:scale-110"
+          className="mt-10 bg-[#273da0] shadow-lg shadow-blue-500 text-white font-semibold rounded-full px-8 py-3 text-lg transition-transform duration-200 hover:bg-[#112f04] hover:scale-110"
         >
           Go to Properties
         </NavLink>
