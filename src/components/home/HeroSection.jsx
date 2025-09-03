@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
-  const images = ["/bg-1.png", "/bg-2.png", "/bg-about.png"];
+  const images = ["/bg-2.png", "/bg-1.png", "/bg-about.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 5000); // change every 5s
+    }, 10000); // change every 5s
 
     return () => clearInterval(interval);
   }, []);
