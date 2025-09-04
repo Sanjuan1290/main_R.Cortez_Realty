@@ -46,28 +46,39 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Form */}
-          <form className="bg-white shadow-md rounded-lg p-6 space-y-4">
+          <form className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="First Name"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
+              />
+            </div>
             <input
-              type="text"
-              placeholder="Your Name"
+              type="email"
+              placeholder="Email Address"
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
             />
             <input
-              type="email"
-              placeholder="Your Email"
+              type="text"
+              placeholder="Phone Number"
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
             />
             <textarea
-              placeholder="Your Message"
-              rows="4"
+              placeholder="Message"
+              rows="5"
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-[#273da0] text-white py-2 rounded-md font-semibold hover:bg-[#112f04] transition"
+              className="w-full bg-[#273da0] text-white py-3 rounded-md font-semibold hover:bg-[#112f04] transition"
             >
-              Send Message
+              Submit
             </button>
           </form>
         </div>

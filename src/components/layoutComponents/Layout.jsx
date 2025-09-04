@@ -1,10 +1,12 @@
 import Header from "./Header"
 import Footer from "./Footer"
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import ScrollToTop from "./ScrollToTop"
 import Contact from "./Contact"
 
 const Layout = () => {
+  const location = useLocation()
+  console.log(location.pathname);
   return (
     <>
         <ScrollToTop />
@@ -12,7 +14,9 @@ const Layout = () => {
         <main className="">
           
             <Outlet />
-            <Contact />
+            {
+              location.pathname === '/contact' ? '' : <Contact />
+            }
         </main>
         <Footer />
     </>   
