@@ -15,7 +15,7 @@ const Realtors = () => {
   ];
 
   return (
-    <div className="mt-10 py-16 px-6 md:px-10 bg-[#f8f8f8] text-center">
+    <div className="mt-10 h-[80vh] py-16 px-6 md:px-10 bg-[#f8f8f8] text-center">
       <h2 className="text-4xl font-bold text-green-900 mb-2">Meet Our Realtors</h2>
       <div className="bg-orange-950 h-[3px] w-[120px] mx-auto mb-8"></div>
       <p className="max-w-3xl mx-auto text-gray-700 mb-12">
