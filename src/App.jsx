@@ -10,7 +10,9 @@ import ContactPage from "./components/contact/ContactPage"
 import Properties from "./components/properties/Properties"
 import HighEndProperties from "./components/properties/HighEndProperties"
 import TownHomes from './components/properties/TownHomes'
-import FarmLots from './components/properties/FarmLots'
+
+import FarmLotsLayout from "./components/properties/FarmLotsList/FarmLotsLayout"
+import CaviteList from "./components/properties/FarmLotsList/Cavite/CaviteList"
 
 function App() {
 
@@ -24,7 +26,13 @@ function App() {
       <Route path="/properties" element={<Properties />} />
       <Route path="/high-end" element={<HighEndProperties />}/>
       <Route path="/townhomes" element={<TownHomes />}/>
-      <Route path="/farm-lots" element={<FarmLots />}/>
+
+      <Route path="/farm-lots" element={<FarmLotsLayout />}>
+        <Route path="cavite" element={<CaviteList />}/>
+        <Route path="pampanga" element={<CaviteList />}/>
+        <Route path="olongapo" element={<CaviteList />}/>
+      </Route>
+
     </Route>
   ))
 
