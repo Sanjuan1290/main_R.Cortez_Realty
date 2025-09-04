@@ -31,6 +31,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+        <img src="/logo.png" alt="" className="-z-10 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[40%] opacity-15"/>
         <h1 className="text-5xl md:text-7xl font-bold text-orange-400 drop-shadow-lg">
           R. Cortez Realty
         </h1>

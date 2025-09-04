@@ -1,57 +1,48 @@
-
-import Alfonso from "./Alfornso";
-import Naic from "./Naic";
-
 const CaviteList = () => {
-  const categories = [
-    { name: "Alfonso, Cavite", id: "alfonso" },
-    { name: "Naic, Cavite", id: "naic" },
+  const listings = [
+    {
+      name: "Alfonso, Cavite",
+      description:
+        "Do you want a property near Tagaytay that is inexpensive? There is a Lot for Sale in Alfonso, Cavite with complete documents that is very affordable at perfect for residential or agricultural purposes.",
+      image: "/properties/FarmLots/Cavite/alfonso.png",
+    },
+    {
+      name: "Naic, Cavite",
+      description:
+        "Do you want to own an expandable property? There is a Lot for Sale in Naic, Cavite with complete documents that is very affordable at perfect for residential or agricultural purposes.",
+      image: "/properties/FarmLots/Cavite/naic.png",
+    },
   ];
 
-  const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <div className="mt-14 px-6 md:px-16 py-16 bg-gray-50 min-h-screen">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-          Cavite Farm Lots
-        </h1>
-        <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
-          Find farm lots across Cavite suited for agriculture, leisure, and
-          investment opportunities.
-        </p>
-      </div>
-
-      {/* Category Cards */}
+    <div className="px-6 md:px-16 py-16 bg-gray-50 min-h-screen mt-14">
+      <h1 className="text-4xl font-bold text-gray-900 mb-10 text-center">
+        Cavite Farm Lots
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {categories.map((category, idx) => (
-          <button
+        {listings.map((lot, idx) => (
+          <div
             key={idx}
-            onClick={() => handleScroll(category.id)}
-            className="bg-white shadow-md rounded-lg p-8 text-center hover:shadow-xl transition group"
+            className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition flex flex-col"
           >
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3 group-hover:text-orange-500">
-              {category.name}
-            </h2>
-            <p className="text-gray-600 text-sm">
-              View listings in {category.name}.
-            </p>
-          </button>
+            <img
+              src={lot.image}
+              alt={lot.name}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-6 flex flex-col flex-grow text-center">
+              <h2 className="text-xl font-semibold text-gray-800 mb-3">
+                {lot.name}
+              </h2>
+              <p className="text-gray-600 italic text-sm flex-grow">
+                {lot.description}
+              </p>
+              <button className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
         ))}
-      </div>
-
-      {/* Sections */}
-      <div id="alfonso" className="pt-20">
-        <Alfonso />
-      </div>
-      <div id="naic" className="pt-20">
-        <Naic />
       </div>
     </div>
   );
