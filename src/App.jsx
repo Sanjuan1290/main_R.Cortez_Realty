@@ -6,6 +6,7 @@ import About from "./components/aboutUs/AboutUs"
 import Realtors from "./components/realtors/Realtors"
 import FAQs from "./components/FAQs/faqs"
 import ContactPage from "./components/contact/ContactPage"
+import Properties from "./components/properties/Properties"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Route path="/realtors" element={<Realtors />} />
       <Route path="/FAQs" element={<FAQs />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/properties" element={<Properties />} />
     </Route>
   ))
 

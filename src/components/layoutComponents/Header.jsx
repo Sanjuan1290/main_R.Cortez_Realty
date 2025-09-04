@@ -1,12 +1,10 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showProperties, setShowProperties] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -49,6 +47,7 @@ const Header = () => {
           {[
             { to: "/", label: "Home" },
             { to: "/realtors", label: "Realtors" },
+            { to: "/properties", label: "Properties" },
             { to: "/about", label: "About" },
             { to: "/FAQs", label: "FAQs" },
             { to: "/contact", label: "Contact" },
@@ -68,41 +67,6 @@ const Header = () => {
               </NavLink>
             </li>
           ))}
-
-          {/* Properties Dropdown */}
-          <li className="relative">
-            <button
-              onClick={() => setShowProperties(!showProperties)}
-              className="flex items-center gap-1 hover:text-orange-400 transition"
-            >
-              Properties{" "}
-              <IoIosArrowDown
-                className={`transition-transform ${showProperties ? "rotate-180" : ""}`}
-              />
-            </button>
-            {showProperties && (
-              <ul className="absolute left-0 mt-2 w-56 bg-[rgba(77,55,31,0.95)] rounded-lg shadow-lg flex flex-col text-sm">
-                <NavLink
-                  to="/properties/high-end"
-                  className="px-4 py-2 hover:bg-orange-400/20"
-                >
-                  High End Properties
-                </NavLink>
-                <NavLink
-                  to="/properties/townhomes"
-                  className="px-4 py-2 hover:bg-orange-400/20"
-                >
-                  Townhomes
-                </NavLink>
-                <NavLink
-                  to="/properties/farm-lots"
-                  className="px-4 py-2 hover:bg-orange-400/20"
-                >
-                  Farm Lots
-                </NavLink>
-              </ul>
-            )}
-          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -119,7 +83,7 @@ const Header = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/realtors", label: "Realtors" },
-              { to: "/listings", label: "Listings" },
+              { to: "/properties", label: "Properties" },
               { to: "/about", label: "About" },
               { to: "/FAQs", label: "FAQs" },
               { to: "/contact", label: "Contact" },
@@ -133,44 +97,6 @@ const Header = () => {
                 {item.label}
               </NavLink>
             ))}
-
-            {/* Properties Dropdown in Mobile */}
-            <div className="flex flex-col items-center gap-2">
-              <button
-                onClick={() => setShowProperties(!showProperties)}
-                className="flex items-center gap-1 text-lg hover:text-orange-400 transition"
-              >
-                Properties{" "}
-                <IoIosArrowDown
-                  className={`transition-transform ${showProperties ? "rotate-180" : ""}`}
-                />
-              </button>
-              {showProperties && (
-                <div className="flex flex-col gap-2 text-sm">
-                  <NavLink
-                    to="/properties/high-end"
-                    className="hover:text-orange-400"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    High End Properties
-                  </NavLink>
-                  <NavLink
-                    to="/properties/townhomes"
-                    className="hover:text-orange-400"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Townhomes
-                  </NavLink>
-                  <NavLink
-                    to="/properties/farm-lots"
-                    className="hover:text-orange-400"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Farm Lots
-                  </NavLink>
-                </div>
-              )}
-            </div>
           </div>
         )}
       </nav>

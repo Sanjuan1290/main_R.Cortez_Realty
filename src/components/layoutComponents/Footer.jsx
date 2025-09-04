@@ -1,12 +1,8 @@
 import { NavLink } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
-import { useState } from "react";
 
 const Footer = () => {
-  const [showProperties, setShowProperties] = useState(false);
-
   return (
     <footer className="bg-gradient-to-b from-[#4a2f16] to-[#2b1a0d] text-gray-200 px-12 pt-14 pb-6 mt-12 border-t border-orange-900/40">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -32,30 +28,10 @@ const Footer = () => {
           </h3>
           <NavLink to="/" className="hover:text-orange-300">Home</NavLink>
           <NavLink to="/realtors" className="hover:text-orange-300">Realtors</NavLink>
+          <NavLink to="/properties" className="hover:text-orange-300">Properties</NavLink>
           <NavLink to="/about" className="hover:text-orange-300">About</NavLink>
           <NavLink to="/FAQs" className="hover:text-orange-300">FAQs</NavLink>
           <NavLink to="/contact" className="hover:text-orange-300">Contact</NavLink>
-
-          {/* Properties Dropdown */}
-          <button
-            onClick={() => setShowProperties(!showProperties)}
-            className="flex items-center gap-2 hover:text-orange-300"
-          >
-            Properties <IoIosArrowDown className={`text-xs transition-transform ${showProperties ? "rotate-180" : ""}`} />
-          </button>
-          {showProperties && (
-            <div className="ml-4 flex flex-col gap-2 text-sm">
-              <NavLink to="/properties/high-end" className="hover:text-orange-300">
-                High End Properties
-              </NavLink>
-              <NavLink to="/properties/townhomes" className="hover:text-orange-300">
-                Townhomes
-              </NavLink>
-              <NavLink to="/properties/farm-lots" className="hover:text-orange-300">
-                Farm Lots
-              </NavLink>
-            </div>
-          )}
         </div>
 
         {/* Social Media */}
