@@ -32,7 +32,6 @@ const Footer = () => {
           </h3>
           <NavLink to="/" className="hover:text-orange-300">Home</NavLink>
           <NavLink to="/realtors" className="hover:text-orange-300">Realtors</NavLink>
-          <NavLink to="/listings" className="hover:text-orange-300">Listings</NavLink>
           <NavLink to="/about" className="hover:text-orange-300">About</NavLink>
           <NavLink to="/FAQs" className="hover:text-orange-300">FAQs</NavLink>
           <NavLink to="/contact" className="hover:text-orange-300">Contact</NavLink>

@@ -49,7 +49,6 @@ const Header = () => {
           {[
             { to: "/", label: "Home" },
             { to: "/realtors", label: "Realtors" },
-            { to: "/listings", label: "Listings" },
             { to: "/about", label: "About" },
             { to: "/FAQs", label: "FAQs" },
             { to: "/contact", label: "Contact" },
