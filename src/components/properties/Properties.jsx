@@ -6,20 +6,20 @@ const Properties = () => {
     {
       name: "High-End Properties",
       description: "Luxury homes and premium estates with top-class features.",
-      link: "/properties/high-end",
-      image: "/properties/highend.jpg",
+      link: "/high-end",
+      image: "/properties/highend.png",
     },
     {
       name: "Townhomes",
       description: "Comfortable and modern townhomes for families and professionals.",
-      link: "/properties/townhomes",
-      image: "/properties/townhomes.jpg",
+      link: "/townhomes",
+      image: "/properties/townhomes.png",
     },
     {
       name: "Farm Lots",
       description: "Spacious agricultural and leisure farm lots across Cavite.",
-      link: "/properties/farm-lots",
-      image: "/properties/farmlots.jpg",
+      link: "/farm-lots",
+      image: "/properties/farmlots.png",
     },
   ];
 
@@ -37,7 +37,7 @@ const Properties = () => {
             <img
               src={cat.image}
               alt={cat.name}
-              className="w-full h-48 object-cover"
+              className="w-full h-72 object-cover"
             />
             <div className="p-6 text-center">
               <h2 className="text-xl font-semibold text-gray-800">{cat.name}</h2>
