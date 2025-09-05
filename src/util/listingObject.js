@@ -1,4 +1,4 @@
-const condos = [
+const HighEnd_Condo = [
     {
       name: "Taguig City",
       description:
@@ -158,6 +158,52 @@ const condos = [
       reference: `   
                 DHSUD TLS# 068 (Tower 3), AA#R4A-070124-0279
                 All materials from One Lancaster Park Marketing, 2025. Used as reference only. 
+                No copyright infringement intended.`,
+    },
+  ];
+
+
+  const HighEnd_Seaside = [
+    {
+      name: "Laiya, Batangas",
+      description:
+        "A vibrant beachside haven that brings together the best of leisure and lifestyle at the heart of Batangas’ thriving tourism scene.",
+      image: "/properties/HighEnd/Seaside/laiyaBatangas.png",
+      youtubeEmbeded: <iframe width="533" height="266" src="https://www.youtube.com/embed/92KrXw6jgqQ" title="The Spinnaker at Club Laiya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+      overViewImageList: [
+                          "/overViewImages/HighEnd/SeaSide/LaiyaBatangas/image1.png", 
+                          "/overViewImages/HighEnd/SeaSide/LaiyaBatangas/image2.png", 
+                          "/overViewImages/HighEnd/SeaSide/LaiyaBatangas/image3.png", 
+                          "/overViewImages/HighEnd/SeaSide/LaiyaBatangas/image4.png", 
+                      ], 
+      floorPlanImage: [
+                        "/overViewImages/HighEnd/SeaSide/LaiyaBatangas/floorPlan/image1.png", 
+                        "/overViewImages/HighEnd/SeaSide/LaiyaBatangas/floorPlan/image2.png",
+                        "/overViewImages/HighEnd/SeaSide/LaiyaBatangas/floorPlan/image3.png",
+                      ],
+      googleMapEmbeded: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41109.649877682554!2d121.392077!3d13.673265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd25fbe786760d%3A0x9563e8cbf12b5f30!2sClub%20Laiya!5e1!3m2!1sen!2sus!4v1757077054647!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+      reference: `   
+                All materials from Landco Marketing, 2025. Used as reference only.
+                No copyright infringement intended.`,
+    },
+    {
+      name: "Calatagan, Batangas",
+      description:
+        "Seamlessly combines stunning coastal landscapes with modern comforts and 4-star worthy Filipino hospitality, transforming your beachside resort-living aspirations into reality.",
+      image: "/properties/HighEnd/Seaside/calataganBatangas.png",
+      youtubeEmbeded: <iframe width="1113" height="620" src="https://www.youtube.com/embed/cCozyNNq51E" title="CaSoBē Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+      overViewImageList: [
+                          "/overViewImages/HighEnd/SeaSide/CalataganBatangas/image1.png", 
+                          "/overViewImages/HighEnd/SeaSide/CalataganBatangas/image2.png", 
+                          "/overViewImages/HighEnd/SeaSide/CalataganBatangas/image3.png", 
+                          "/overViewImages/HighEnd/SeaSide/CalataganBatangas/image4.png", 
+                      ], 
+      floorPlanImage: [
+                        "/overViewImages/HighEnd/SeaSide/CalataganBatangas/floorPlan/image1.png", 
+                      ],
+      googleMapEmbeded: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41088.608124975886!2d120.641562!3d13.793295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bdb1322a4c2001%3A0xb087f9b81edd8563!2sCocoons%20(at%20CaSoB%C4%93)!5e1!3m2!1sen!2sus!4v1757077282650!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+      reference: `   
+                All materials from Landco Marketing, 2025. Used as reference only.
                 No copyright infringement intended.`,
     },
   ];
