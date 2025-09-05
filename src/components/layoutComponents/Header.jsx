@@ -46,7 +46,7 @@ const Header = () => {
         <ul className="hidden md:flex gap-8 text-lg font-medium relative">
           {[
             { to: "/", label: "Home" },
-            { to: "/realtors", label: "Realtors" },
+            // { to: "/realtors", label: "Realtors" },
             { to: "/properties", label: "Properties" },
             { to: "/about", label: "About" },
             { to: "/FAQs", label: "FAQs" },
@@ -82,7 +82,7 @@ const Header = () => {
           <div className="absolute top-full left-0 w-full bg-[rgba(77,55,31,0.95)] text-white flex flex-col items-center gap-6 py-6 md:hidden">
             {[
               { to: "/", label: "Home" },
-              { to: "/realtors", label: "Realtors" },
+              // { to: "/realtors", label: "Realtors" },
               { to: "/properties", label: "Properties" },
               { to: "/about", label: "About" },
               { to: "/FAQs", label: "FAQs" },

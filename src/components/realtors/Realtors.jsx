@@ -16,10 +16,10 @@ const Realtors = () => {
 
   return (
     <div className="mt-10 h-[80vh] py-16 px-6 md:px-10 bg-[#f8f8f8] text-center">
-      <h2 className="text-4xl font-bold text-green-900 mb-2">Meet Our Realtors</h2>
+      <h2 className="text-4xl font-bold text-green-900 mb-2">Meet Our Business Executives</h2>
       <div className="bg-orange-950 h-[3px] w-[120px] mx-auto mb-8"></div>
       <p className="max-w-3xl mx-auto text-gray-700 mb-12">
-        Our team of professional realtors is committed to guiding you through every step of your property needs with honesty and expertise.
+        Our team of professional real estate executives is committed to guiding you through every step of your property needs with honesty and expertise.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">

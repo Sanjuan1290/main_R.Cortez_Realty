@@ -27,7 +27,7 @@ const Footer = () => {
             Quick Links
           </h3>
           <NavLink to="/" className="hover:text-orange-300">Home</NavLink>
-          <NavLink to="/realtors" className="hover:text-orange-300">Realtors</NavLink>
+          {/* <NavLink to="/realtors" className="hover:text-orange-300">Realtors</NavLink> */}
           <NavLink to="/properties" className="hover:text-orange-300">Properties</NavLink>
           <NavLink to="/about" className="hover:text-orange-300">About</NavLink>
           <NavLink to="/FAQs" className="hover:text-orange-300">FAQs</NavLink>
