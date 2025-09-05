@@ -207,3 +207,41 @@ const HighEnd_Condo = [
                 No copyright infringement intended.`,
     },
   ];
+
+
+  const HighEnd_Leisure = [
+    {
+      name: "Nasugbu, Batangas",
+      description:
+        "Situated at the foothills, it is an approximately 100-hectare pre-selling leisure community. ",
+      image: "/properties/HighEnd/Leisure/nasugbuBatangas.png",
+      youtubeEmbeded: <iframe width="1113" height="620" src="https://www.youtube.com/embed/e6nX_tfrVp0" title="MVLFR PHASE 1 WALKTHROUGH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+      overViewImageList: [
+                        //no Image
+                      ], 
+      floorPlanImage: [
+                        //no Image
+                      ],
+      googleMapEmbeded: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41075.519627755646!2d120.69344199999999!3d14.093398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd91e36de184cd%3A0xcf4607918ca8d01f!2sMountain%20View%20Leisure%20Community!5e1!3m2!1sen!2sus!4v1757077501244!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+      reference: `   
+                All materials from V. Hermosa Bright Corp. Marketing, 2025. Used as reference only.
+                No copyright infringement intended.`,
+    },
+    {
+      name: "Indang, Cavite",
+      description:
+        "Located at the heart of Cavite, invest in an affordable farm lot which you could call as your own.",
+      image: "/properties/HighEnd/Leisure/indangCavite.png",
+        youtubeEmbeded: 'No Video',
+        overViewImageList: [
+                          //no Image
+                        ], 
+        floorPlanImage: [
+                          //no Image
+                        ],
+        googleMapEmbeded: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41013.98127603035!2d120.86671099999998!3d14.21098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd8226d61d6a9f%3A0x48efc40fc896ecab!2sTRUE%20VINE!5e1!3m2!1sen!2sus!4v1757077595845!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        reference: `   
+                  All materials from V. Hermosa Bright Corp. Marketing, 2025. Used as reference only.
+                  No copyright infringement intended.`,
+    },
+];
