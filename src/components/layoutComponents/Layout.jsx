@@ -6,7 +6,6 @@ import Contact from "./Contact"
 
 const Layout = () => {
   const location = useLocation()
-  console.log(location.pathname);
   return (
     <>
         <ScrollToTop />

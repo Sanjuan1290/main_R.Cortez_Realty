@@ -1,18 +1,6 @@
+import { Farmlots_listings } from "../../../../util/listingObject";
+
 const CaviteList = () => {
-  const listings = [
-    {
-      name: "Alfonso, Cavite",
-      description:
-        "Do you want a property near Tagaytay that is inexpensive? There is a Lot for Sale in Alfonso, Cavite with complete documents that is very affordable at perfect for residential or agricultural purposes.",
-      image: "/properties/FarmLots/Cavite/alfonso.png",
-    },
-    {
-      name: "Naic, Cavite",
-      description:
-        "Do you want to own an expandable property? There is a Lot for Sale in Naic, Cavite with complete documents that is very affordable at perfect for residential or agricultural purposes.",
-      image: "/properties/FarmLots/Cavite/naic.png",
-    },
-  ];
 
   return (
     <div className="px-6 md:px-16 py-16 bg-gray-50 min-h-screen mt-14">
@@ -20,7 +8,7 @@ const CaviteList = () => {
         Cavite Farm Lots
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {listings.map((lot, idx) => (
+        {Farmlots_listings.map((lot, idx) => (
           <div
             key={idx}
             className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition flex flex-col"

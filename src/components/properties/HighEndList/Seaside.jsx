@@ -1,18 +1,7 @@
+import { HighEnd_Seaside } from "../../../util/listingObject";
+
 const Condominium = () => {
-  const condos = [
-    {
-      name: "Laiya, Batangas",
-      description:
-        "A vibrant beachside haven that brings together the best of leisure and lifestyle at the heart of Batangas’ thriving tourism scene.",
-      image: "/properties/HighEnd/Seaside/laiyaBatangas.png",
-    },
-    {
-      name: "Calatagan, Batangas",
-      description:
-        "Seamlessly combines stunning coastal landscapes with modern comforts and 4-star worthy Filipino hospitality, transforming your beachside resort-living aspirations into reality.",
-      image: "/properties/HighEnd/Seaside/calataganBatangas.png",
-    },
-  ];
+
 
   return (
     <div className="px-6 md:px-16 py-16 bg-gray-50 min-h-screen">
@@ -20,7 +9,7 @@ const Condominium = () => {
         Sea Side Properties
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {condos.map((condo, idx) => (
+        {HighEnd_Seaside.map((condo, idx) => (
           <div
             key={idx}
             className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition flex flex-col"

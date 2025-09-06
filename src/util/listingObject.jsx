@@ -1,5 +1,6 @@
-const HighEnd_Condo = [
+export const HighEnd_Condo = [
     {
+      id: 'condo-1',
       name: "Taguig City",
       description:
         "Your island escape comes to life at a resort-inspired community nestled at the heart of Taguig City. Taking resort living a notch higher, it features an authentic vacation ambience to give urbanities a welcome respite from the daily hustle and bustle of the city.",
@@ -23,6 +24,7 @@ const HighEnd_Condo = [
                 No copyright infringement intended.`,
     },
     {
+      id: 'condo-2',
       name: "Parañaque City",
       description:
         "A Zen-inspired, mid-rise condo community that offers all the modern features of contemporary urban living, set amidst an inspired landscape of peace, harmony and tranquility.",
@@ -45,6 +47,7 @@ const HighEnd_Condo = [
                 No copyright infringement intended.`,
     },
     {
+      id: 'condo-3',
       name: "Muntinlupa City",
       description:
         "A resort-inspired, mid-rise, residential community characterized by lush greens and open spaces, generous amenities, dynamic architecture, and cleverly-designed living spaces that create the coveted lifestyle typifying daily holidays.",
@@ -65,6 +68,7 @@ const HighEnd_Condo = [
                 No copyright infringement intended.`,
     },
     {
+      id: 'condo-4',
       name: "Bacoor City",
       description:
         "With its nature-inspired design, it embraces sustainability and vibrant lifestyle, bringing you the beauty and strength of nature into your home.",
@@ -85,6 +89,7 @@ const HighEnd_Condo = [
                 No copyright infringement intended.`,
     },
     {
+      id: 'condo-5',
       name: "Tagaytay City",
       description:
         "Enjoy intimate getaways as you unwind surrounded by sprawling garden. Relish moments to recharge: a heart picnic, a peaceful stroll, a refreshing jog or a restful moment under a tree.",
@@ -107,6 +112,7 @@ const HighEnd_Condo = [
                   No copyright infringement intended.`,
     },
     {
+      id: 'condo-6',
       name: "Dasmariñas City",
       description:
         "Discover a premier residential and mixed-use development that offers seamless connectivity to major business centers, educational institutions, and leisure spots, making it perfect for young professionals, families, and retirees.",
@@ -137,6 +143,7 @@ const HighEnd_Condo = [
                   No copyright infringement intended.`,
     },
     {
+      id: 'condo-7',
       name: "Imus City",
       description:
         "It combines the convenience of the metro combined with the tranquility of the suburbs, allowing its future residents to live a comfortable life where everyone can find a balance between work and play.",
@@ -160,11 +167,12 @@ const HighEnd_Condo = [
                 All materials from One Lancaster Park Marketing, 2025. Used as reference only. 
                 No copyright infringement intended.`,
     },
-  ];
+];
 
 
-const HighEnd_Seaside = [
+export const HighEnd_Seaside = [
   {
+    id: 'seaside-1',
     name: "Laiya, Batangas",
     description:
       "A vibrant beachside haven that brings together the best of leisure and lifestyle at the heart of Batangas’ thriving tourism scene.",
@@ -187,6 +195,7 @@ const HighEnd_Seaside = [
               No copyright infringement intended.`,
   },
   {
+    id: 'seaside-2',
     name: "Calatagan, Batangas",
     description:
       "Seamlessly combines stunning coastal landscapes with modern comforts and 4-star worthy Filipino hospitality, transforming your beachside resort-living aspirations into reality.",
@@ -209,8 +218,9 @@ const HighEnd_Seaside = [
 ];
 
 
-const HighEnd_Leisure = [
+export const HighEnd_Leisure = [
     {
+      id: 'leisure-1',
       name: "Nasugbu, Batangas",
       description:
         "Situated at the foothills, it is an approximately 100-hectare pre-selling leisure community. ",
@@ -228,6 +238,7 @@ const HighEnd_Leisure = [
                 No copyright infringement intended.`,
     },
     {
+      id: 'leisure-2',
       name: "Indang, Cavite",
       description:
         "Located at the heart of Cavite, invest in an affordable farm lot which you could call as your own.",
@@ -247,8 +258,9 @@ const HighEnd_Leisure = [
 ];
 
 
-const TownHomes_EcoFriendly = [
+export const TownHomes_EcoFriendly = [
   {
+    id: 'ecoFriendly-1',
     name: "Malainen Bago, Naic",
     description:
       "Its 3,345 Amora EcoLove townhomes are equipped with solar panel systems and rainwater storage tanks, which are just a few of the reasons why it was awarded 3 Stars by the Philippine Green Building Council (PHILGBC) under its BERDE (Building for Ecologically Responsive Design Excellence) program.",
@@ -270,6 +282,7 @@ const TownHomes_EcoFriendly = [
             No copyright infringement intended.`,
   },
   {
+    id: 'ecoFriendly-2',
     name: "Palangue, Naic",
     description:
       "Its 2,645 Helena townhomes embodies the Company’s focus on keeping homeowners’ priorities in mind, with value-added features such as column-and-beam superstructure, window grills, steel service doors, double deadbolts, and roofing insulation. ",
@@ -294,8 +307,9 @@ const TownHomes_EcoFriendly = [
 ];
 
 
-const TownHomes_Affordable = [
+export const TownHomes_Affordable = [
   {
+    id: 'affordable-1',
     name: "Trece Martires, Cavite",
     description:
       "With homes depicting simplicity and comfort, you and your family will surely feel that homey atmosphere, perfect in nurturing your family’s well being. Now, that’s a new take in simple living. ",
@@ -317,6 +331,7 @@ const TownHomes_Affordable = [
                 No copyright infringement intended.`,
   },
   {
+    id: 'affordable-2',
     name: "Naic, Cavite",
     description:
       "How life turns out for you depends on how you would look at it. You can start that new outlook with homes that are easy on the budget and are good quality, you can plan your life ahead with less worries.",
@@ -334,6 +349,7 @@ const TownHomes_Affordable = [
                 No copyright infringement intended.`,
   },
   {
+    id: 'affordable-3',
     name: "Tanza, Cavite",
     description:
       "Looking for that new property which looks amazing but affordable at the same time? Get a unit and enjoy the start of a new beginning with your loved ones.",
@@ -353,8 +369,9 @@ const TownHomes_Affordable = [
 ];
 
 
-const TownHomes_Accessible = [
+export const TownHomes_Accessible = [
   {
+    id: 'accessible-1',
     name: "Imus, Cavite",
     description:
       "This developed community provides residents with the best balance of nature and urban living abound with wide open spaces, lush green landscapes, and well maintained amenities that afford families' infinite opportunities for fun and leisure.",
@@ -372,6 +389,7 @@ const TownHomes_Accessible = [
                 No copyright infringement intended.`,
   },
   {
+    id: 'accessible-2',
     name: "Tanza, Cavite",
     description:
       "A residential community made up of affordable homes designed for young professionals and families.  Within the community, the beauty of nature is blended with the comforts of well-designed houses. ",
@@ -387,6 +405,7 @@ const TownHomes_Accessible = [
               No copyright infringement intended.`,
   },
   {
+    id: 'accessible-3',
     name: "Silang, Cavite",
     description:
       "This elegant enclave features six phases of exquisitely designed single-detached and duplex homes embraced by nature. Admire soothing views, indulge in exclusive recreation, and enjoy easy access to Tagaytay's cool breeze.",
@@ -409,8 +428,9 @@ const TownHomes_Accessible = [
 ];
 
 
-const Farmlots_listings = [
+export const Farmlots_listings = [
   {
+    id: 'listings-1',
     name: "Alfonso, Cavite",
     description:
       "Do you want a property near Tagaytay that is inexpensive? There is a Lot for Sale in Alfonso, Cavite with complete documents that is very affordable at perfect for residential or agricultural purposes.",
@@ -426,6 +446,7 @@ const Farmlots_listings = [
                 No copyright infringement intended.`,
   },
   {
+    id: 'listings-2',
     name: "Naic, Cavite",
     description:
       "Do you want to own an expandable property? There is a Lot for Sale in Naic, Cavite with complete documents that is very affordable at perfect for residential or agricultural purposes.",

@@ -29,8 +29,6 @@ function App() {
 
       <Route path="/farm-lots" element={<FarmLotsLayout />}>
         <Route path="cavite" element={<CaviteList />}/>
-        <Route path="pampanga" element={<CaviteList />}/>
-        <Route path="olongapo" element={<CaviteList />}/>
       </Route>
 
     </Route>

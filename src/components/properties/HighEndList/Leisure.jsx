@@ -1,18 +1,8 @@
+import { HighEnd_Leisure } from "../../../util/listingObject";
+
+
 const Condominium = () => {
-  const condos = [
-    {
-      name: "Nasugbu, Batangas",
-      description:
-        "Situated at the foothills, it is an approximately 100-hectare pre-selling leisure community. ",
-      image: "/properties/HighEnd/Leisure/nasugbuBatangas.png",
-    },
-    {
-      name: "Indang, Cavite",
-      description:
-        "Located at the heart of Cavite, invest in an affordable farm lot which you could call as your own.",
-      image: "/properties/HighEnd/Leisure/indangCavite.png",
-    },
-  ];
+
 
   return (
     <div className="px-6 md:px-16 py-16 bg-gray-50 min-h-screen">
@@ -20,7 +10,7 @@ const Condominium = () => {
         Leisure Properties
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {condos.map((condo, idx) => (
+        {HighEnd_Leisure.map((condo, idx) => (
           <div
             key={idx}
             className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition flex flex-col"
