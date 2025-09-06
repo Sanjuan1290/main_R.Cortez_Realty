@@ -1,24 +1,7 @@
-const Condominium = () => {
-  const condos = [
-    {
-      name: "Trece Martires, Cavite",
-      description:
-        "With homes depicting simplicity and comfort, you and your family will surely feel that homey atmosphere, perfect in nurturing your family’s well being. Now, that’s a new take in simple living. ",
-      image: "/properties/TownHomes/Affordable/treceMartires_Cavite.png",
-    },
-    {
-      name: "Naic, Cavite",
-      description:
-        "How life turns out for you depends on how you would look at it. You can start that new outlook with homes that are easy on the budget and are good quality, you can plan your life ahead with less worries.",
-      image: "/properties/TownHomes/Affordable/naic_Cavite.png",
-    },
-    {
-      name: "Tanza, Cavite",
-      description:
-        "Looking for that new property which looks amazing but affordable at the same time? Get a unit and enjoy the start of a new beginning with your loved ones.",
-      image: "/properties/TownHomes/Affordable/tanza_Cavite.png",
-    },
-  ];
+import { NavLink } from "react-router-dom";
+import { TownHomes_Affordable } from "../../../util/listingObject";
+const Affordable = () => {
+
 
   return (
     <div className="px-6 md:px-16 py-16 bg-gray-50 min-h-screen">
@@ -26,7 +9,7 @@ const Condominium = () => {
         Affordable TownHomes
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {condos.map((condo, idx) => (
+        {TownHomes_Affordable.map((condo, idx) => (
           <div
             key={idx}
             className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition flex flex-col"
@@ -43,9 +26,9 @@ const Condominium = () => {
               <p className="text-gray-600 text-sm flex-grow">
                 {condo.description}
               </p>
-              <button className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
+              <NavLink to={`/property/${condo.id}`} className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
                 LEARN MORE
-              </button>
+              </NavLink>
             </div>
           </div>
         ))}
@@ -54,4 +37,4 @@ const Condominium = () => {
   );
 };
 
-export default Condominium;
+export default Affordable;

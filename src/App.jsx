@@ -14,6 +14,8 @@ import TownHomes from './components/properties/TownHomes'
 import FarmLotsLayout from "./components/properties/FarmLotsList/FarmLotsLayout"
 import CaviteList from "./components/properties/FarmLotsList/Cavite/CaviteList"
 
+import SingleProperty from "./components/SingleProperty"
+
 function App() {
 
   const router = createBrowserRouter(createRoutesFromElements(
@@ -30,6 +32,8 @@ function App() {
       <Route path="/farm-lots" element={<FarmLotsLayout />}>
         <Route path="cavite" element={<CaviteList />}/>
       </Route>
+
+      <Route path="/property/:id" element={<SingleProperty />}/>
 
     </Route>
   ))

@@ -1,5 +1,5 @@
 import { HighEnd_Leisure } from "../../../util/listingObject";
-
+import { NavLink } from "react-router-dom";
 
 const Condominium = () => {
 
@@ -27,9 +27,9 @@ const Condominium = () => {
               <p className="text-gray-600 text-sm flex-grow">
                 {condo.description}
               </p>
-              <button className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
+              <NavLink to={`/property/${condo.id}`} className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
                 LEARN MORE
-              </button>
+              </NavLink>
             </div>
           </div>
         ))}

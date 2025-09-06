@@ -1,5 +1,5 @@
 import { Farmlots_listings } from "../../../../util/listingObject";
-
+import { NavLink } from "react-router-dom";
 const CaviteList = () => {
 
   return (
@@ -25,9 +25,9 @@ const CaviteList = () => {
               <p className="text-gray-600 italic text-sm flex-grow">
                 {lot.description}
               </p>
-              <button className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
+              <NavLink to={`/property/${lot.id}`} className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
                 LEARN MORE
-              </button>
+              </NavLink>
             </div>
           </div>
         ))}
