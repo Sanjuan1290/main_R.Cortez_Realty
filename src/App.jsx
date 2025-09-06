@@ -4,7 +4,7 @@ import Layout from "./components/layoutComponents/Layout"
 import Home from "./components/home/Home"
 import About from "./components/aboutUs/AboutUs"
 import Realtors from "./components/realtors/Realtors"
-import FAQs from "./components/FAQs/faqs"
+import FAQs from "./components/FAQs/FAQs_Component"
 import ContactPage from "./components/contact/ContactPage"
 
 import Properties from "./components/properties/Properties"
