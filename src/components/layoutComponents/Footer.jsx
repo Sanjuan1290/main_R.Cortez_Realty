@@ -39,10 +39,10 @@ const Footer = () => {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-orange-400">
             Follow Us
           </h3>
-          <NavLink to="" className="flex items-center gap-2 hover:text-orange-300">
+          <NavLink to="https://www.facebook.com/RCortezRealtyOfficial" target="_blank" className="flex items-center gap-2 hover:text-orange-300">
             <FaFacebook className="w-5 h-5 text-blue-600" /> Facebook
           </NavLink>
-          <NavLink to="" className="flex items-center gap-2 hover:text-orange-300">
+          <NavLink to="" className="pointer-events-none flex items-center gap-2 hover:text-orange-300">
             <BiLogoInstagramAlt className="w-6 h-6 text-pink-600" /> Instagram
           </NavLink>
         </div>

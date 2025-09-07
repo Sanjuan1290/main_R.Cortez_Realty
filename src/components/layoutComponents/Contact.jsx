@@ -70,8 +70,7 @@ const Contact = () => {
               <FaPhoneAlt className="text-xl text-[#273da0]" />
               <div>
                 <p className="font-medium">Phone</p>
-                <p className="tracking-wide">+63 9178142818</p>
-                <p className="tracking-wide">+63 9171009355</p>
+                <p className="tracking-wide">+63 9278965570</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
