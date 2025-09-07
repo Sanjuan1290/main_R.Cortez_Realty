@@ -24,7 +24,7 @@ const Properties = () => {
   ];
 
   return (
-    <div className="px-6 md:px-16 py-16 bg-gray-50 mt-20 h-[80vh]">
+    <div className="px-6 md:px-16 py-16 bg-gray-50 mt-20 h-fit">
       <h1 className="text-4xl font-bold text-center text-gray-900 mb-10">
         Explore Our Properties
       </h1>

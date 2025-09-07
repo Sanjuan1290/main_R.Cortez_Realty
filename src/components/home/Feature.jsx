@@ -18,34 +18,34 @@ const Feature = () => {
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 w-full max-w-6xl px-6">
         {/* Card 1 */}
-        <div className="flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-4">
+        <NavLink to={'/property/condo-1'} className="flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-4">
           <img
             src="/featureImage/image1.png"
             alt="Taguig City Property"
             className="rounded-lg w-full h-[250px] object-cover"
           />
           <p className="mt-4 text-lg font-medium text-gray-800">Taguig City</p>
-        </div>
+        </NavLink>
 
         {/* Card 2 */}
-        <div className="flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-4">
+        <NavLink to={'/property/ecoFriendly-1'} className="flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-4">
           <img
             src="/featureImage/image2.png"
             alt="Naic Property"
             className="rounded-lg w-full h-[250px] object-cover"
           />
           <p className="mt-4 text-lg font-medium text-gray-800">Malainen Bago, Naic</p>
-        </div>
+        </NavLink>
 
         {/* Card 3 */}
-        <div className="flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-4">
+        <NavLink to={'/property/condo-6'} className="flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-4">
           <img
             src="/featureImage/image3.png"
             alt="Dasmariñas City Property"
             className="rounded-lg w-full h-[250px] object-cover"
           />
           <p className="mt-4 text-lg font-medium text-gray-800">Dasmariñas City</p>
-        </div>
+        </NavLink>
       </div>
 
       {/* Button */}

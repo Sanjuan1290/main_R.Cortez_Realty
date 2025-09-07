@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="relative h-[85vh] text-gray-50">
+    <section className="relative h-fit text-gray-50">
       {/* Background Image + Overlay */}
       <img
         src="/bg-about.png"
