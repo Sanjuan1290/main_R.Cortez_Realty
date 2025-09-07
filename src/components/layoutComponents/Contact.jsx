@@ -1,8 +1,49 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_mei2sff",      // from EmailJS dashboard
+        "template_d0fvh2n",     // your email template ID
+        {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        "gJflIZ_Q7NBFA8o83"       // your public key
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+        },
+        (error) => {
+          alert("Failed to send message. Try again.");
+        }
+      );
+  };
+
   return (
     <div className="px-6 md:px-16 py-16 bg-gray-50">
       {/* Heading */}
@@ -13,11 +54,10 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Grid: Contact Info + Form + Map */}
+      {/* Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        {/* Contact Info + Form */}
+        {/* Info + Form */}
         <div className="flex flex-col gap-8">
-          {/* Info */}
           <div className="space-y-6">
             <div className="flex items-start gap-3">
               <MdEmail className="text-2xl text-[#273da0]" />
@@ -46,34 +86,50 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="space-y-4">
+          {/* Form */}
+          <form onSubmit={sendEmail} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
+                name="firstName"
                 placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleChange}
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
               />
               <input
                 type="text"
+                name="lastName"
                 placeholder="Last Name"
+                value={formData.lastName}
+                onChange={handleChange}
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
               />
             </div>
             <input
               type="email"
+              name="email"
               placeholder="Email Address"
+              value={formData.email}
+              onChange={handleChange}
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
             />
             <input
               type="text"
+              name="phone"
               placeholder="Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
             />
             <textarea
+              name="message"
               placeholder="Message"
               rows="5"
+              value={formData.message}
+              onChange={handleChange}
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-[#273da0] outline-none"
-            ></textarea>
+            />
             <button
               type="submit"
               className="w-full bg-[#273da0] text-white py-3 rounded-md font-semibold hover:bg-[#112f04] transition"
