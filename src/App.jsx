@@ -16,6 +16,9 @@ import CaviteList from "./components/properties/FarmLotsList/Cavite/CaviteList"
 
 import SingleProperty from "./components/SingleProperty"
 
+import Policy from "./components/Policy"
+import Page404 from "./components/Page404"
+
 function App() {
 
   const router = createBrowserRouter(createRoutesFromElements(
@@ -34,6 +37,10 @@ function App() {
       </Route>
 
       <Route path="/property/:id" element={<SingleProperty />}/>
+      
+      <Route path="/policy" element={<Policy />}/>
+
+      <Route path="*" element={<Page404 />}/>
 
     </Route>
   ))

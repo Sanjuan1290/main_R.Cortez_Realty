@@ -52,10 +52,7 @@ const Footer = () => {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-orange-400">
             Legal
           </h3>
-          <NavLink to="/terms" className="hover:text-orange-300">
-            Terms of Service
-          </NavLink>
-          <NavLink to="/privacyPolicy" className="hover:text-orange-300">
+          <NavLink to="/policy" className="hover:text-orange-300">
             Privacy Policy
           </NavLink>
         </div>
