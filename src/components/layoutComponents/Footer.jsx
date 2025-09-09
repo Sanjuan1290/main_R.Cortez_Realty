@@ -32,6 +32,7 @@ const Footer = () => {
           <NavLink to="/about" className="hover:text-orange-300">About</NavLink>
           <NavLink to="/FAQs" className="hover:text-orange-300">FAQs</NavLink>
           <NavLink to="/contact" className="hover:text-orange-300">Contact</NavLink>
+          <p>+63 9278965570</p>
         </div>
 
         {/* Social Media */}

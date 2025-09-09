@@ -36,11 +36,11 @@ const Header = () => {
     >
       <nav className="flex justify-between items-center py-3 px-6 md:px-12 text-gray-100">
         {/* Logo */}
-        <img
+        <NavLink to={'/'}><img
           src="/logo.png"
           alt="logo"
           className="w-[70px] h-[55px] rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform"
-        />
+        /></NavLink>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-8 text-lg font-medium relative">
