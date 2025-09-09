@@ -1,12 +1,25 @@
 import { Farmlots_listings } from "../../../../util/listingObject";
 import { NavLink } from "react-router-dom";
-const CaviteList = () => {
+import { ArrowLeft } from "lucide-react";
 
+const CaviteList = () => {
   return (
     <div className="px-6 md:px-16 py-16 bg-gray-50 min-h-screen mt-14">
+      {/* Back button */}
+      <div className="mb-6">
+        <NavLink
+          to="/farm-lots"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#273da0] text-white font-medium shadow-md hover:bg-[#1b2973] transition"
+        >
+          <ArrowLeft size={18} />
+          Back to Farm Lots
+        </NavLink>
+      </div>
+
       <h1 className="text-4xl font-bold text-gray-900 mb-10 text-center">
         Cavite Farm Lots
       </h1>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {Farmlots_listings.map((lot, idx) => (
           <div
@@ -25,8 +38,11 @@ const CaviteList = () => {
               <p className="text-gray-600 italic text-sm flex-grow">
                 {lot.description}
               </p>
-              <NavLink to={`/property/${lot.id}`} className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded">
-                LEARN MORE
+              <NavLink
+                to={`/property/${lot.id}`}
+                className="mt-4 bg-[#273da0] hover:bg-[#1b2973] text-white font-medium py-2 px-4 rounded transition"
+              >
+                Learn More
               </NavLink>
             </div>
           </div>

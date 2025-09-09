@@ -67,6 +67,7 @@ const Header = () => {
               </NavLink>
             </li>
           ))}
+          <li>+63 9278965570</li>
         </ul>
 
         {/* Mobile Menu Button */}

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { ArrowLeft } from "lucide-react"; // arrow icon
 
 const FarmLots = () => {
   const categories = [
@@ -7,6 +8,17 @@ const FarmLots = () => {
 
   return (
     <div className="mt-14 px-6 md:px-16 py-16 bg-gray-50 h-[80vh]">
+      {/* Back button */}
+      <div className="mb-6">
+        <NavLink
+          to="/properties"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#273da0] text-white font-medium shadow-md hover:bg-[#1b2973] transition"
+        >
+          <ArrowLeft size={18} />
+          Back to Properties
+        </NavLink>
+      </div>
+
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
           Farm Lots
