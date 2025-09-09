@@ -34,19 +34,20 @@ const Header = () => {
           : "bg-[rgba(77,55,31,0.25)]"
       }`}
     >
-      <nav className="flex justify-between items-center py-3 px-6 md:px-12 text-gray-100">
+      <nav className="flex justify-between items-center py-3 px-6 md:px-12 text-gray-100 relative">
         {/* Logo */}
-        <NavLink to={'/'}><img
-          src="/logo.png"
-          alt="logo"
-          className="w-[70px] h-[55px] rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform"
-        /></NavLink>
+        <NavLink to={"/"}>
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="w-[70px] h-[55px] rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform"
+          />
+        </NavLink>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex gap-8 text-lg font-medium relative">
+        <ul className="hidden md:flex gap-6 lg:text-lg text-[16px] font-medium relative">
           {[
             { to: "/", label: "Home" },
-            // { to: "/realtors", label: "Realtors" },
             { to: "/properties", label: "Properties" },
             { to: "/about", label: "About" },
             { to: "/FAQs", label: "FAQs" },
@@ -67,39 +68,43 @@ const Header = () => {
               </NavLink>
             </li>
           ))}
-          <li>+63 9278965570</li>
+          <li className="ml-4">+63 9278965570</li>
         </ul>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl"
+          className="md:hidden text-3xl z-30"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <HiX /> : <HiMenu />}
         </button>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-[rgba(77,55,31,0.95)] text-white flex flex-col items-center gap-6 py-6 md:hidden">
-            {[
-              { to: "/", label: "Home" },
-              // { to: "/realtors", label: "Realtors" },
-              { to: "/properties", label: "Properties" },
-              { to: "/about", label: "About" },
-              { to: "/FAQs", label: "FAQs" },
-              { to: "/contact", label: "Contact" },
-            ].map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                className="text-lg hover:text-orange-400 transition"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.label}
-              </NavLink>
-            ))}
-          </div>
-        )}
+        {/* Mobile Menu with transition */}
+        <div
+          className={`absolute top-full left-0 w-full bg-[rgba(77,55,31,0.95)] text-white flex flex-col items-center gap-6 py-6 md:hidden transform transition-all duration-500 ease-in-out ${
+            menuOpen
+              ? "opacity-100 translate-y-0 pointer-events-auto"
+              : "opacity-0 -translate-y-5 pointer-events-none"
+          }`}
+        >
+          {[
+            { to: "/", label: "Home" },
+            { to: "/properties", label: "Properties" },
+            { to: "/about", label: "About" },
+            { to: "/FAQs", label: "FAQs" },
+            { to: "/contact", label: "Contact" },
+          ].map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className="text-lg hover:text-orange-400 transition"
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </NavLink>
+          ))}
+          <span className="text-lg">+63 9278965570</span>
+        </div>
       </nav>
     </header>
   );
